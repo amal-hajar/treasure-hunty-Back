@@ -8,7 +8,7 @@ The authentication system is implemented using **JSON Web Tokens (JWT)**, provid
 
 **Endpoint:**
 ```
-POST http://localhost:8080/auth/signup
+POST /auth/signup
 ```
 
 **Request Body:**
@@ -44,7 +44,7 @@ POST http://localhost:8080/auth/signup
 
 **Endpoint:**
 ```
-POST http://localhost:8080/auth/login
+/auth/login
 ```
 
 **Request Body:**
@@ -69,7 +69,7 @@ POST http://localhost:8080/auth/login
 
 **Endpoint:**
 ```
-POST http://localhost:8080/auth/logout
+POST /auth/logout
 ```
 
 **Description:**
@@ -95,7 +95,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 **Endpoint:**
 ```
-GET http://localhost:8080/users/me
+GET /users/me
 ```
 
 **Headers:**
@@ -123,7 +123,7 @@ Authorization: Bearer <JWT_TOKEN>
 
 **Endpoint:**
 ```
-POST http://localhost:8080/games
+POST /games
 ```
 
 **Request Body:**
@@ -141,7 +141,7 @@ POST http://localhost:8080/games
 
 **Endpoint:**
 ```
-GET http://localhost:8080/riddles
+GET /riddles
 ```
 
 **Response:**
@@ -157,7 +157,7 @@ GET http://localhost:8080/riddles
 
 **Endpoint:**
 ```
-GET http://localhost:8080/riddles/277
+GET /riddles/{id}
 ```
 
 **Response:**
@@ -177,7 +177,7 @@ GET http://localhost:8080/riddles/277
 
 **Endpoint:**
 ```
-POST http://localhost:8080/riddles/solve/277
+POST /riddles/solve/{id}
 ```
 
 **Request Body:**
@@ -214,7 +214,7 @@ POST http://localhost:8080/riddles/solve/277
 
 **Endpoint:**
 ```
-GET http://localhost:8080/riddles/277
+GET /riddles/{id}
 ```
 
 **Response:**
